@@ -1,0 +1,122 @@
+body {
+  background-color: #ffffff; /* White */
+  background-repeat: repeat;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+  }
+}
+
+}
+.navbar-default .navbar-nav > li >a:hover,
+.navbar-default .navbar-nav > li >a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+ }
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.footer__menu li {
+  padding: 0 1rem 1rem 1rem;
+}
+.footer__menu li > a {
+  text-decoration: none;
+}
+
+.mobile-br {
+	display: none;
+}
+	
+a:hover,
+a:focus {
+  color: #000000;
+}
+
+/* Mobile-only styles */
+@media (max-width: 600px) {  
+  .container {
+    padding: 0;
+  }
+
+  .content-container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+
+.row > [class*='col-'],
+.row > [class*='col-'] >[class*='col-']{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.row > [class*='col-']:first-child{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.row > [class*='col-']:last-child{
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* Tablet and mobile styles */
+@media (max-width: 800px) {
+	.mobile-br {
+		display: inherit;
+	}	
+  
+  .content-container {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left:0;
+    margin-right:0;
+  }
+  
+  .row > [class*='col-'] {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;  
+    margin-bottom:2em;  
+  }
+
+  .row > [class*='col-']:last-child{
+    margin-bottom:0;  
+  }
+
+}
+
+@media (min-width: 1550px) {
+  .content-container {
+    padding-left: 1550px * 0.11;
+    padding-right: 1550px* 0.11;
+  }
+  .content-container .content-container--text{
+    padding-left: 1550px * 0.22;
+    padding-right: 1550px* 0.22;
+  }
+}
