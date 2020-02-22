@@ -1,9 +1,10 @@
 body {
-  background-color: #ffffff; /* White */
+  background-color: #0D2A38; /* Dark Blue */
+  background-image: url("assets/background/parasol_background_red.png");
   background-repeat: repeat;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {  /*<-- what the fuck is this suzanne  */
   .navbar-nav {
     float:none;
     margin:0 auto;
@@ -13,38 +14,93 @@ body {
 }
 
 }
-.navbar-default .navbar-nav > li >a:hover,
-.navbar-default .navbar-nav > li >a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav > li >a:hover,  /*<-- what the fuck is this suzanne  */
+.navbar-default .navbar-nav > li >a:focus,  /*<-- what the fuck is this suzanne  */
+.navbar-default .navbar-nav > .active > a:hover {  /*<-- what the fuck is this suzanne  */
  }
 
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav > .active > a { /*<-- what the fuck is this suzanne  */
   background-color: transparent;
   font-weight: bold;
   text-decoration: underline;
 }
+
+.header-curve-image {
+position: absolute;
+background-size: 100% 100%;
+width: 100%;
+
+}
+.navbar-side {
+  background-color: #0D2A38;
+}
+
+.about-background-image {
+background-image: url("assets/background/parasol_background_yellow.png");
+}
+
+.games-background-image {
+background-image: url("assets/background/parasol_background_green.png");
+}
+
+.jumbotron {
+background-color: #ffffff; /* White */
+width: 100%;
+height: 172px;
+}
+
+.presskit-background-image {
+background-image: url("assets/background/parasol_background_red.png");
+}
+
+.section-title {
+  font-size: 96px;
+  color: #0D2A38; /* Dark Blue */
+}
+
+.section {
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.container-fluid {
+  background-color: transparent;
+}
+.content-container {
+  box-sizing: border-box;
+  max-width: 1550px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
 .footer {
+  color: #ffffff; /* White */
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .footer__menu {
+  background-color: #0D2A38; /* Dark Blue */
   list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: none;
+  height: 303px;
   padding: 0;
   margin-bottom: 0;
 }
 
-.footer__menu li {
+.footer__menu li {  /*<-- what the fuck is this suzanne  */
   padding: 0 1rem 1rem 1rem;
 }
-.footer__menu li > a {
+.footer__menu li > a {  /*<-- what the fuck is this suzanne  */
   text-decoration: none;
 }
 
-.mobile-br {
+.mobile-br {  /*<-- what the fuck is this suzanne  */
 	display: none;
 }
 	
