@@ -28,7 +28,7 @@ body {
 .navbar-default .navbar-nav > .active > a:hover {  /*<-- what the fuck is this suzanne  */
  }
 
- .content-container {
+.content-container {
   box-sizing: border-box;
   max-width: 1550px;
   margin-left: auto;
@@ -68,19 +68,44 @@ body {
 }
 
 .header-curve-image {
-  position: relative;
-  width: 100%;
-  margin-top: -22px;
+  display: block;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-top: -5em;
   z-index: -1;
+  -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.5); /* FF3.5+ */
+  -ms-transform: scale(0.5); /* IE9 */
+  -o-transform: scale(0.5); /* Opera 10.5+ */
+  transform: scale(0.5);
+  border: 2px dashed #000000;
+}
+
+.header-logo-image {
+  display: block;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-top: -2em;
+  -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.5); /* FF3.5+ */
+  -ms-transform: scale(0.5); /* IE9 */
+  -o-transform: scale(0.5); /* Opera 10.5+ */
+  transform: scale(0.5);
+  z-index: 4;
+  border: 2px dashed #000000;
 }
 
 .jumbotron {
-  position: relative;
+  text-align: center;
+  display: block;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   background-color: #ffffff; /* White */
   width: 100%;
-  height: 170px;
-  border-bottom: 18px solid #F95D62; /* Sunshower Salmon */
+  height: 112px;
+  border-bottom: 9px solid #F95D62; /* Sunshower Salmon */
   z-index: -1;
+
 }
 
 .mobile-br {  /*<-- what the fuck is this suzanne  */
@@ -134,10 +159,11 @@ body {
 }
 
 .teaser-image {
-width: 280px;
-width: 280px;
-border-radius: 280px;
-border: 18px solid #F95D62; /* Sunshower Salmon */
+  width: 280px;
+  width: 280px;
+  border-radius: 280px;
+  border: 18px solid #F95D62; /* Sunshower Salmon */
+  background-color: #F95D62; /* Sunshower Salmon */;
 }
 
 .teaser-button-overlay {
@@ -145,7 +171,6 @@ border: 18px solid #F95D62; /* Sunshower Salmon */
   width: 20em;
   background-color: #4AE996; /* Sunshower Mint */
   border-radius: 50%;
-
 }
 
 .teaser-text {
