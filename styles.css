@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis|Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Fredoka+One|Teko');
 
 a {
   color: #0D2A38;
@@ -28,9 +28,21 @@ body {
 .navbar-default .navbar-nav > .active > a:hover {  /*<-- what the fuck is this suzanne  */
  }
 
+.bg-section-about {
+  background-image: url("assets/background/parasol_background_yellow.png");
+}
+  
+.bg-section-games {
+  background-image: url("assets/background/parasol_background_green.png");
+}
+  
+.bg-section-presskit {
+  background-image: url("assets/background/parasol_background_red.png");
+}
+
 .content-container {
   box-sizing: border-box;
-  max-width: 1550px;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto;
   padding-left: 11%;
@@ -46,10 +58,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-color: #0D2A38; /* Dark Blue */
 }
 
 .footer__menu {
-  background-color: #0D2A38; /* Dark Blue */
   list-style: none;
   display: flex;
   justify-content: center;
@@ -66,33 +79,75 @@ body {
 .footer__menu li > a {  /*<-- what the fuck is this suzanne  */
   text-decoration: none;
 }
+.gutter-left {
+  display: flex;
+  border: 2px dashed #1d0efa;
+  width: 20%;
+  height: 50%;
+  justify-content: space-between;
+  margin-right: auto;
+}
+
+.gutter-right {
+  display: flex;
+  border: 2px dashed #1fff50;
+  width: 20%;
+  height: 50%;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 96px;
+  color: #0D2A38; /* Dark Blue */
+  font-family: 'Fredoka One';
+}
+
+h2 {
+  color: #0D2A38; /* Dark Blue */
+  font-family: 'Teko';
+}
 
 .header-curve-image {
-  display: block;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-  margin-top: -5em;
-  z-index: -1;
-  -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
-  -moz-transform: scale(0.5); /* FF3.5+ */
-  -ms-transform: scale(0.5); /* IE9 */
-  -o-transform: scale(0.5); /* Opera 10.5+ */
-  transform: scale(0.5);
-  border: 2px dashed #000000;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  text-align: center;
+  margin-top: -4.2em;
+  z-index: 1;
+  -webkit-transform: scale(0.8); /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.8); /* FF3.5+ */
+  -ms-transform: scale(0.8); /* IE9 */
+  -o-transform: scale(0.8); /* Opera 10.5+ */
+  transform: scale(0.8);
 }
 
 .header-logo-image {
-  display: block;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  text-align: center;
   margin-top: -2em;
-  -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
-  -moz-transform: scale(0.5); /* FF3.5+ */
-  -ms-transform: scale(0.5); /* IE9 */
-  -o-transform: scale(0.5); /* Opera 10.5+ */
-  transform: scale(0.5);
-  z-index: 4;
-  border: 2px dashed #000000;
+  -webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.7); /* FF3.5+ */
+  -ms-transform: scale(0.7); /* IE9 */
+  -o-transform: scale(0.7); /* Opera 10.5+ */
+  transform: scale(0.7);
+  z-index: 2;
+}
+
+.img {
+  position: static;
+  width: 100%;
+  height: 100%;
+  max-width: inherit;
+  margin-top: inherit;
+  justify-items: inherit;
+  justify-content: inherit;
+  justify-self: inherit;
+  margin-left: inherit;;
+  margin-right: inherit;
 }
 
 .jumbotron {
@@ -102,10 +157,9 @@ body {
   margin-right: 0 auto;
   background-color: #ffffff; /* White */
   width: 100%;
-  height: 112px;
-  border-bottom: 9px solid #F95D62; /* Sunshower Salmon */
+  height: 5em;
+  border-bottom: 16px solid #F95D62; /* Sunshower Salmon */
   z-index: -1;
-
 }
 
 .mobile-br {  /*<-- what the fuck is this suzanne  */
@@ -118,84 +172,233 @@ body {
   text-decoration: underline;
 }
 
+.navbar-gutter {
+  display: block;
+  background-color: #0D2A38; /* Navy Blue */
+  width: 15%;
+  /* border: 4px solid #F95D62; */
+}
+
+.navbar-link {
+  font-family:'Teko';
+  font-size: 30px;
+  color: #ffffff;
+  display: block;
+  margin: none;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-right: 0.3em;
+  text-align: right;
+}
+
+.navbar-list {
+  padding-top: 3.5em;
+  list-style: none;
+}
+
 .navbar-side {
-  background-color: #0D2A38;
+  display: block;
+  max-width: 100%;
+  position: sticky;
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  top: 1em;
+  width: 15em;
+  height: 100%;
+  align-items: stretch;
 }
 
-.section-title {
-  font-size: 96px;
-  color: #0D2A38; /* Dark Blue */
+.page-main {
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  margin: auto;
+  max-width: 1080px;
+  padding: 0;
+  /* border: 2px dashed #000000; */
 }
 
-.section {
-  position: relative;
-  padding-top: 4em;
-  padding-bottom: 4em;
+.page-section-full {
+  width: 100%;
+  /* border: 4px dashed #6200ff; */
+  display: block;
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 100%;
+  padding: 0;
+}
+.page-section-content {
+  width: 100%;
+  /* border: 4px dashed #6200ff; */
+  display: block;
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 1280px;
+  padding: 0;
 }
 
-.section-about-background-image {
-  background-image: url("assets/background/parasol_background_yellow.png");
+.page-section-header-behind-about {
+  width: 100%;
+  max-width: 100%;
+  height: 50%;
+  max-height: 50%;
+  background:
+    linear-gradient(#ffffff,#ffffff) 0 calc(0% + 5.25em)/100% 20px no-repeat,
+    linear-gradient(#63FFAB,#63FFAB) 0 calc(5.25em + 100%)/100% 100% no-repeat;
 }
-  
-.section-games-background-image {
+.page-section-header-behind-games {
+  width: 100%;
+  max-width: 100%;
+  height: 50%;
+  max-height: 50%;
+  background:
+    linear-gradient(#ffffff,#ffffff) 0 calc(0% + 5.25em)/100% 20px no-repeat,
+    linear-gradient(#FCDDAD,#FCDDAD) 0 calc(5.25em + 100%)/100% 100% no-repeat;
+}
+
+.section-container-body {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-container-content-about {
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  padding: 3em;
   background-image: url("assets/background/parasol_background_green.png");
 }
-  
-.section-presskit-background-image {
-  background-image: url("assets/background/parasol_background_red.png");
+
+.section-container-content-games {
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  padding: 3em;
+  background-image: url("assets/background/parasol_background_yellow.png");
+}
+
+.section-behind-games {
+  width: 100%;
+  height: 100%;
+  background-color: #ff00dd;
+}
+.section-behind-presskit {
+  width: 100%;
+  height: 100%;
+  background-color: #ff00dd;
+}
+.section-header-about-container {
+  display: inline-block;
+  position: relative;
+  max-height: 100%;
+  text-align: center;    
+  width: 100%;
+}
+
+.section-header-games-container {
+  display: inline-block;
+  position: relative;
+  max-height: 100%;
+  text-align: center;    
+  width: 100%;
+}
+
+.section-header-textbox-about {
+  width: 1366px;
+  justify-self: center;
+  display: flex;
+  padding: 11em 5em 6em 22em;
+  background-image: url("assets/header_about.png");
+  background-repeat: no-repeat;
+}
+.section-header-textbox-games {
+  width: 1366px;
+  justify-self: center;
+  display: flex;
+  padding: 11em 5em 6em 22em;
+  background-image: url("assets/header_games.png");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#section-image-header {
+  display: block;
+  margin-top: 1em;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* border: 4px dashed #ff00dd; */
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+}
+
+.section-whole-container {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* border: 4px dashed #ff9100; */
 }
 
 .teaser-grid {
-  display: grid;
+  align-items: center;
   justify-items: center;
-  margin-top: 6em;
+  display: inline-grid;
+  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 16em;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   height: 500px;
-  width: 75em;
+  width: 100%;
+  max-width: 1080px;
+  /* border: 2px dashed #000000; */
 }
 
 .teaser-image {
-  width: 280px;
-  width: 280px;
-  border-radius: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 22em; /* 280px */
+  width: 22em;
+  border-radius: 22em;
   border: 18px solid #F95D62; /* Sunshower Salmon */
   background-color: #F95D62; /* Sunshower Salmon */;
 }
 
 .teaser-button-overlay {
-  height: 20em;
-  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 22em; /* 280px */
+  width: 22em;
   background-color: #4AE996; /* Sunshower Mint */
-  border-radius: 50%;
+  border-radius: 22em;
 }
 
 .teaser-text {
   text-align: center;
-  min-width: 100%;
-  min-height: 0;
+  min-width: 308px;
   font-size: 4em;
-  margin-top: 0px;
   font-family: 'Fredoka One';
+  /* border: 2px dashed #000000; */
 }
 
 .teaser-button {
-  height: 20em;
-  width: 20em;
+  height: 22em;
+  width: 22em;
   background-color: hsl(0, 0%, 100%); /* White */
-  border-radius: 50%;
-
+  border-radius: 22em;
 }
 
 .teaser-button-center {
-  height: 20em;
-  width: 20em;
+  height: 22em;
+  width: 22em;
   background-color: #ffffff; /* White */
   border-radius: 50%;
-  margin-top: -8em;
+  margin-top: -14em;
 }
 
 .teaser-button-empty {
