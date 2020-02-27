@@ -208,6 +208,10 @@ h2 {
   align-items: stretch;
 }
 
+.p {
+  font-size: 16px;
+}
+
 .page-main {
   display: block;
   box-sizing: border-box;
@@ -266,16 +270,23 @@ h2 {
   display: block;
   width: 80%;
   max-width: 100%;
-  padding: 3em;
+  padding: 6em;
   background-image: url("assets/background/parasol_background_green.png");
+  text-align: justify;
 }
 
 .section-container-content-games {
   display: block;
   width: 80%;
   max-width: 100%;
-  padding: 3em;
+  padding: 6em;
   background-image: url("assets/background/parasol_background_yellow.png");
+  text-align: justify;
+}
+
+.section-container-content-about > .p {
+  font-size: 16px;
+  margin-top: 4em;
 }
 
 .section-behind-games {
