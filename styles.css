@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis|Fredoka+One|Teko');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Oxygen');
 
 a {
   color: #0D2A38;
@@ -12,6 +12,8 @@ body {
   background-color: #0D2A38; /* Dark Blue */
   background-image: url("assets/background/parasol_background_red.png");
   background-repeat: repeat;
+  font-family: 'Oxygen';
+  color: #0D2A38; /* Dark Blue */
 }
 
 @media (min-width: 768px) {  /*<-- what the fuck is this suzanne  */
@@ -82,11 +84,13 @@ h1 {
   font-size: 96px;
   color: #0D2A38; /* Dark Blue */
   font-family: 'Fredoka One';
+
 }
 
 h2 {
   color: #0D2A38; /* Dark Blue */
-  font-family: 'Teko';
+  font-family: 'Oxygen';
+  font-size: 36px;
 }
 
 .header-curve-image {
@@ -170,7 +174,7 @@ h2 {
 }
 
 .navbar-link {
-  font-family:'Teko';
+  font-family:'Oxygen';
   font-size: 30px;
   color: #ffffff;
   display: block;
@@ -200,6 +204,7 @@ h2 {
 
 .p {
   font-size: 16px;
+  color: #000000;
 }
 
 .page-main {
@@ -366,6 +371,7 @@ h2 {
   margin-top: -1em;
   background-image: url("assets/header_about.png");
   background-repeat: no-repeat;
+
 }
 
 .section-header-textbox-games {
@@ -376,6 +382,7 @@ h2 {
   margin-top: -1em;
   background-image: url("assets/header_games.png");
   background-repeat: no-repeat;
+
 }
 
 .section-header-textbox-presskit {
@@ -386,6 +393,7 @@ h2 {
   margin-top: -1em;
   background-image: url("assets/header_presskit.png");
   background-repeat: no-repeat;
+
 }
 
 .section-header-bleed {
