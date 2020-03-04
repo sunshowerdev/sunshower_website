@@ -1,8 +1,4 @@
-<<<<<<< 4dca8834ebff9a575fceec7ef24a703e2f058bdb
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Oxygen');
-=======
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
->>>>>>> Finished layout for mobile.
 
 a {
   color: #0D2A38;
@@ -21,10 +17,6 @@ body {
   background-color: #0D2A38; /* Dark Blue */
   background-image: url("assets/background/parasol_background_red.png");
   background-repeat: repeat;
-<<<<<<< 4dca8834ebff9a575fceec7ef24a703e2f058bdb
-  font-family: 'Oxygen';
-  color: #0D2A38; /* Dark Blue */
-=======
   font-family: 'Strait';
   font-size: 16px;
   position: relative;
@@ -48,7 +40,6 @@ h2 {
 
 element {
   white-space: pre-wrap;
->>>>>>> Finished layout for mobile.
 }
 
 @media (min-width: 768px) {  /*<-- what the fuck is this suzanne  */
@@ -120,23 +111,6 @@ element {
   width: 20%;
 }
 
-<<<<<<< 4dca8834ebff9a575fceec7ef24a703e2f058bdb
-h1 {
-  display: inline-block;
-  font-size: 96px;
-  color: #0D2A38; /* Dark Blue */
-  font-family: 'Fredoka One';
-
-}
-
-h2 {
-  color: #0D2A38; /* Dark Blue */
-  font-family: 'Oxygen';
-  font-size: 36px;
-}
-
-=======
->>>>>>> Finished layout for mobile.
 .header-curve-image {
   justify-content: center;
   justify-self: center;
@@ -218,11 +192,7 @@ h2 {
 }
 
 .navbar-link {
-<<<<<<< 4dca8834ebff9a575fceec7ef24a703e2f058bdb
-  font-family:'Oxygen';
-=======
   font-family:'Fredoka One';
->>>>>>> Finished layout for mobile.
   font-size: 30px;
   color: #ffffff;
   display: block;
@@ -250,14 +220,6 @@ h2 {
   align-items: stretch;
 }
 
-<<<<<<< 4dca8834ebff9a575fceec7ef24a703e2f058bdb
-.p {
-  font-size: 16px;
-  color: #000000;
-}
-
-=======
->>>>>>> Finished layout for mobile.
 .page-main {
 
   display: block;
