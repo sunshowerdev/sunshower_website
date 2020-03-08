@@ -24,6 +24,7 @@
 </head>
 
 <body>
+  <div class="page-landing">
 	<div class="jumbotron">
     <div class="jumbotron-header">
       <div class="hidden-mobile"><img class="header-logo-image" src="assets/sunshower_logo_header.png" alt="Welcome to Studio Sunshower">  
@@ -52,6 +53,7 @@
         <div class="teaser-button-empty"></div>
     </div>
   </div>
+</div>
   <nav class="navbar sticky-left">
     <ul class="navbar-list">
       <li class="navbar-link linklist">
@@ -81,9 +83,8 @@
               <p>Studio Sunshower is a small indie game studio created to fulfill the need for high quality, lovingly hand-crafted experiences. Our mission is simple: deliver iconic games that will withstand the test of time. Part of achieving and sustaining that mission statement is our company philosophy: weathering the storm in a demanding industry that changes every day. </p>
               <div class="row">
                 <div class="column">
-                <p>Sunshower was founded by Hunter Kennoy, a mad game designer (as in mad scientist) with roots in both the commercial and independent game industry. When it felt to him more and more like there were fewer game studios out there built on sustainable work models, he set out to create a studio where passionate creators could work together liberated from the pressures of a demanding industry that too often cares only for the "now".</p> 
-                <p>And, for "now", Hunter is the sole member of the team and the one writing this blurb. So, as you might imagine, he's got quite a handful!</p>
-                <p>Based in Seattle, Washington, “sunshower” is a fitting name for many reasons besides the local weather! Sunshowers are a rare and beautiful thing, providing both the quiet contemplation of the raindrops, as well as the bright warmth of the sun all at once. Whether you prefer your days to be sunny or rainy, sunshowers have something for everyone. We want to capture that energy and imbue it into games that can appeal to audiences across the globe.
+                <p>Sunshower was founded by Hunter Kennoy, a mad game designer (like a mad scientist) with roots in both the commercial and independent game industry. When it began to feel to him more and more like there were fewer game studios out there built upon sustainable work models and the pursuit of passion, he wanted to create something new. A studio where creators can work together free from the pressures of a demanding industry that too often cares only for the "now". And, for "now", Hunter is the sole member of the team and the one writing this blurb. So as you might imagine, he's got quite a handful!</p>
+                <p>Based in Seattle, Washington, “sunshower” is a fitting name for many reasons besides the local weather! Sunshowers are a rare and beautiful thing, providing both the quiet contemplation of the raindrops, as well as the bright warmth of the sun all at once. Whether you prefer your days to be sunny or rainy, sunshowers have something for everyone. We want to imbue that spirit into games that can appeal to audiences across the globe.
                 </p>
                 </div>
                 <div class="column">
@@ -91,7 +92,7 @@
                   </div>
               </div>
               <hr>
-              <p>While we shuffle to find more valid content for the website, please enjoy the above photo of Toccata, our lovely chief secretary.</p>
+              <p>(While we shuffle to find more valid content for the website, please enjoy the above photo of Toccata, our lovely chief secretary.)</p>
             </div>
             <div class="gutter-right"></div>
             <section id="greenlinks"></section>
@@ -139,10 +140,10 @@
         <div id="navbar-gutter">
         </div>
           <div class="section-container-content-presskit">
-            <img class="img-presskit" src="assets/presskit_image.png">
+            <img class="img-content" src="assets/presskit_image.png">
             <h3>Click the appropriate link below to navigate to a presskit!</h3>
-            <h2><a href="presskit-sunshower.html" target="_blank">Studio Sunshower Presskit</a></h2>
-            <h2><a href="presskit-coruncopia.html" target="_blank">Coruncopia Presskit</a></h2>
+            <h2><a href="presskit-sunshower.html">Studio Sunshower Presskit</a></h2>
+            <h2><a href="presskit-coruncopia.html">Coruncopia Presskit</a></h2>
           </div>
           <div class="gutter-right"></div>
           <section id="redlinks"></section>
@@ -183,25 +184,47 @@
         var $goldanchor = $("#games").offset().top;
         var $greenanchor = $("#about").offset().top;
 
-        
+        var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
         $(window).on("scroll touchmove", function() {
-          if ($(document).scrollTop() < $greenanchor && window.width > 786) {
+          if ($(document).scrollTop() < $greenanchor && $(window).width() > 768) {
             $($navbarlist).css({ 'top': '7em',});
           };
-          if ($(document).scrollTop() >= $greenanchor) {
+          if ($(document).scrollTop() >= $greenanchor && $(window).width() > 768) {
             $navbarlink.removeClass('gold-links','red-links');
             $navbarlink.addClass('green-links');
             $($navbarlist).css({ 'top': '0em',});
           };
-          if ($(document).scrollTop() >= $goldanchor) {
+          if ($(document).scrollTop() >= $goldanchor && $(window).width() > 768) {
             $navbarlink.removeClass('red-links', 'green-links');
             $navbarlink.addClass('gold-links');
             $($navbarlist).css({ 'top': '0em',});
           };
-          if ($(document).scrollTop() >= $redanchor) {
+          if ($(document).scrollTop() >= $redanchor && $(window).width() > 768) {
             $navbarlink.removeClass('green-links','gold-links');
             $navbarlink.addClass('red-links');
             $($navbarlist).css({ 'top': '0em',});
+          };
+          if ($(document).scrollTop() = position().top && $(window).width() <= 768) {
+            $($navbar).css({ 'display': 'none', 'top': '7em'});
           };
         });
       </script>
